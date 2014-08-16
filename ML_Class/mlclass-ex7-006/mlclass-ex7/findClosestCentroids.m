@@ -21,10 +21,10 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
-
-
-
+tmp=[];
+for i=1:K
+    tmp=[tmp sum((X-centroids(i,:)).^2,2)];
+[m idx]=min(tmp,[],2);
 
 
 % =============================================================
