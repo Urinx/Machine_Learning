@@ -25,13 +25,13 @@ for epsilon = min(pval):stepsize:max(pval)
 
 
 
-
-
-
-
-
-
-
+    predictions=(pval<epsilon);
+    tp=sum( (yval==1) & (predictions==1) );
+    fp=sum( (yval==0) & (predictions==1) );
+    fn=sum( (yval==1) & (predictions==0) );
+    prec=tp/(tp+fp);
+    rec=tp/(tp+fn);
+    F1=2*prec*rec/(prec+rec);
 
 
 
