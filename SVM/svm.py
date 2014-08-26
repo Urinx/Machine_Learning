@@ -2,7 +2,7 @@
 # coding:utf-8
 
 #########################################
-#            Spam Classifier            #
+#                  SVM                  #
 #########################################
 from numpy import *
 import numpy as np
