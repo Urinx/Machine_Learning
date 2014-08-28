@@ -159,7 +159,7 @@ class K_means(ML):
 
 	# Plot data points in x, coloring them so that those with the same
 	def plotDataPoints(self,x,idx,K):
-		mark=['s','o','^','v','>','<','d','p','h','8','+','*']
+		mark=['s','o','^','v','>','<','d','p','h','8','+','*']*2
 		for i in xrange(K):
 			p=where(idx==i)[0]
 			scatter(x[p,0],x[p,1],s=20,marker=mark[i],color=np.random.rand(1,3),label=str(i))
